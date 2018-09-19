@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{423EB371-3621-CDAB-4FFA-7A04CF09D79C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/view/GameView.cs">
+    <Files>
+      <File FileName="Assets/Scripts/view/RunView.cs" Line="17" Column="41" />
+      <File FileName="Assets/Scripts/engine/controller/RunController.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/view/GameView.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Endless_220Runner PreferredExecutionTarget="Unity.Editor" />
+</Properties>
