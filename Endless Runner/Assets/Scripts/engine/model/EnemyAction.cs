@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyAction
 {
     public int action { get; private set;}
-    public EnemyAction(int action)
+    public int damage { get; private set;}
+    public EnemyAction(int action, int damage)
     {
         this.action = action;
+        this.damage = damage;
     }
 }

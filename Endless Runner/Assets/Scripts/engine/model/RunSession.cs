@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class RunSession  {
 
-    private WavesCreature waves;
-    public override string ToString()
-    {
-        //string str = "";
-        return "[" +  "]";
-            
-    }
+    public WavesCreature wave { get; private set; }
     public RunSession()
     {
-        waves = new WavesCreature();
+        wave = new WavesCreature(5);
+        wave.Next();
     }
 
 }

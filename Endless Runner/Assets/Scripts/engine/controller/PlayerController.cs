@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class PlayerController : Singleton<PlayerController> {
 
-    private Player player;
-	public void InitiatePlayer()
+    public Player player { get; private set; }
+
+    public void InitiatePlayer()
     {
         player = new Player();
+        player.InitiateCharacter(3,100);
+    }
+    
+
+    public void ReceiveAttack(EnemyAction action)
+    {
+        player.ReceiveDamage(action.damage);
     }
 }

@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class Startup : MonoBehaviour
 {
     
-    public int lineOrigin;
-    public int collumOrigin;
-    public int lineDestiny;
-    public int collumnDestiny;
-
     private Canvas mainCanvas;
     private GameView view;
 

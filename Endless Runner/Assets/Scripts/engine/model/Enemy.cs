@@ -5,4 +5,5 @@ using UnityEngine;
 public abstract class Enemy : Character {
 
     public abstract EnemyAction FactoryMethod();
+    
 }
