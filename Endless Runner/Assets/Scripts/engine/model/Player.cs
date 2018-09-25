@@ -26,4 +26,10 @@ public class Player : Character
             blood = initialBlood;
         }
     }
+
+    public int Attack()
+    {
+        //TODO control attack type
+        return -50;
+    }
 }

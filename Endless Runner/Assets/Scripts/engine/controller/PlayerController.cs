@@ -13,7 +13,7 @@ public class PlayerController : Singleton<PlayerController> {
     }
     
 
-    public void ReceiveAttack(EnemyAction action)
+    public void ReceiveDamage(EnemyAction action)
     {
         player.ReceiveDamage(action.damage);
     }

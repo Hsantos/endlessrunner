@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CreatureC : Enemy
 {
-    public override EnemyAction FactoryMethod()
+    public override EnemyAction Attack()
     {
         return new EnemyAction(1,-60);
     }
@@ -19,8 +19,5 @@ public class CreatureC : Enemy
         base.blood = blood;
     }
 
-    public override void ReceiveDamage(int damage)
-    {
-        throw new System.NotImplementedException();
-    }
+    
 }

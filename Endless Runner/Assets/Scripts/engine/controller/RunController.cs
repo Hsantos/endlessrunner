@@ -11,24 +11,32 @@ public class RunController : Singleton<RunController> {
         session = new RunSession();
         PlayerController.ME.InitiatePlayer();
 
+        //Player Damage
+//        LogGame();
+//        EnemyAction(session.wave.creatures[2]);
+//        LogGame();
+//        EnemyAction(session.wave.creatures[2]);
+//        LogGame();
+//        EnemyAction(session.wave.creatures[2]);
+//        LogGame();
+//        EnemyAction(session.wave.creatures[2]);
+//        LogGame();
+
+        //Destroy Enemies
         LogGame();
-
-        EnemyAttack(session.wave.creatures[2]);
-
+        PlayerAction(session.wave.creatures[1]);
         LogGame();
-
-        EnemyAttack(session.wave.creatures[2]);
-
+        PlayerAction(session.wave.creatures[1]);
         LogGame();
-
-        EnemyAttack(session.wave.creatures[2]);
-
+        PlayerAction(session.wave.creatures[0]);
         LogGame();
-
-        EnemyAttack(session.wave.creatures[2]);
-
+        PlayerAction(session.wave.creatures[0]);
         LogGame();
-
+        PlayerAction(session.wave.creatures[0]);
+        LogGame();
+        PlayerAction(session.wave.creatures[0]);
+        LogGame();
+        
     }
 
     public void LogGame()
@@ -50,9 +58,30 @@ public class RunController : Singleton<RunController> {
     }
 
 
-    public void EnemyAttack(Enemy current)
+    public void EnemyAction(Enemy current)
     {
-        PlayerController.ME.ReceiveAttack(current.FactoryMethod());
+        PlayerController.ME.ReceiveDamage(current.Attack());
+        CheckSession();
+    }
+
+    public void PlayerAction(Enemy current)
+    {
+        session.wave.ReceiveDamage(current,PlayerController.ME.player.Attack());
+        CheckSession();
+    }
+
+    private void CheckSession()
+    {
+        //TODO check all possibilities after any action 
+        if (session.wave.finishWaves)
+        {
+            Debug.Log("MISSION COMPLETE");
+        }
+        else if (session.wave.readyToNextWave)
+        {
+            session.wave.Next();
+        }
+       
     }
 
 }
