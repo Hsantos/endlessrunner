@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class Startup : MonoBehaviour
 {
-    
     private Canvas mainCanvas;
     private GameView view;
 
     private void Awake()
     {
-        RunController.ME.StartSession();
-
-    
-        //mainCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        //view = mainCanvas.transform.Find("Game").gameObject.AddComponent<GameView>();
+        mainCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        view = GameObject.Find("Game").gameObject.AddComponent<GameView>();
     }
     
 }

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GameView : MonoBehaviour
 {
-    private RunView board;
-
+    private RunView view;
+    
     void Awake()
     {
-        board = transform.Find("Board").gameObject.AddComponent<RunView>();
+        view = ((GameObject)Instantiate(Resources.Load("Prefab/Runview"), transform)).gameObject.AddComponent<RunView>();
+        view.StartSession();
     }
 
 
- 
 }

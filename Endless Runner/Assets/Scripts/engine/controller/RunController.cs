@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,35 +9,36 @@ public class RunController : Singleton<RunController> {
 	
     public void StartSession()
     {
+        if(session!=null) throw  new Exception();
         session = new RunSession();
         PlayerController.ME.InitiatePlayer();
-
+       
         //Player Damage
-//        LogGame();
-//        EnemyAction(session.wave.creatures[2]);
-//        LogGame();
-//        EnemyAction(session.wave.creatures[2]);
-//        LogGame();
-//        EnemyAction(session.wave.creatures[2]);
-//        LogGame();
-//        EnemyAction(session.wave.creatures[2]);
-//        LogGame();
+        //        LogGame();
+        //        EnemyAction(session.wave.creatures[2]);
+        //        LogGame();
+        //        EnemyAction(session.wave.creatures[2]);
+        //        LogGame();
+        //        EnemyAction(session.wave.creatures[2]);
+        //        LogGame();
+        //        EnemyAction(session.wave.creatures[2]);
+        //        LogGame();
 
         //Destroy Enemies
-        LogGame();
-        PlayerAction(session.wave.creatures[1]);
-        LogGame();
-        PlayerAction(session.wave.creatures[1]);
-        LogGame();
-        PlayerAction(session.wave.creatures[0]);
-        LogGame();
-        PlayerAction(session.wave.creatures[0]);
-        LogGame();
-        PlayerAction(session.wave.creatures[0]);
-        LogGame();
-        PlayerAction(session.wave.creatures[0]);
-        LogGame();
-        
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[1]);
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[1]);
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[0]);
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[0]);
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[0]);
+        //        LogGame();
+        //        PlayerAction(session.wave.creatures[0]);
+        //        LogGame();
+
     }
 
     public void LogGame()

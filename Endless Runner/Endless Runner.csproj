@@ -259,8 +259,12 @@
     <Compile Include="Assets\Scripts\engine\model\WavesCreature.cs" />
     <Compile Include="Assets\Scripts\Startup.cs" />
     <Compile Include="Assets\Scripts\utils\Singleton.cs" />
+    <Compile Include="Assets\Scripts\view\EnemyView.cs" />
     <Compile Include="Assets\Scripts\view\GameView.cs" />
+    <Compile Include="Assets\Scripts\view\PlayerView.cs" />
     <Compile Include="Assets\Scripts\view\RunView.cs" />
+    <Compile Include="Assets\Scripts\view\ScreenView.cs" />
+    <Compile Include="Assets\Scripts\view\WaveView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\DOTween\DOTween.XML" />
